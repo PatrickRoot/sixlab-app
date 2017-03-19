@@ -1,0 +1,25 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.sixlab.app.sixlabapp.ft.NotificationsFragment"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <Button android:id="@+id/btn" android:text="btn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Button android:id="@+id/btn06" android:text="btn06" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Button android:id="@+id/btn07" android:text="btn07" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Button android:id="@+id/btn08" android:text="btn08" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Button android:id="@+id/btn09" android:text="btn09" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Button android:id="@+id/btn10" android:text="btn10" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Button android:id="@+id/btn11" android:text="btn11" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Button android:id="@+id/btn13" android:text="btn13" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Button android:id="@+id/btn14" android:text="btn14" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Button android:id="@+id/btn15" android:text="btn15" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Button android:id="@+id/btn16" android:text="btn16" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Button android:id="@+id/btn17" android:text="btn17" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Button android:id="@+id/btn18" android:text="btn18" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Button android:id="@+id/btn19" android:text="btn19" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,580 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.sixlab.app.sixlabapp.ft.NotificationsFragment"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical"
+    android:background="#24cf5f"
+    android:weightSum="2">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp">
+
+        <RelativeLayout
+            android:id="@+id/user_info_head_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/user_info_icon_container"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="4dp"
+                    android:id="@+id/iv_gender"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="right|bottom"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/ic_male" />
+
+                <ImageView
+                    android:id="@+id/iv_portrait"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@mipmap/widget_default_face" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/user_info_icon_container"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:text="Patrick" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_logo_setting"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/ic_title_bar_icon_bg"
+            android:contentDescription="@null"
+            android:padding="12dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/btn_my_setting" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lay_about_info"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#24cf5f"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ly_tweet"
+                style="@style/new_user_information_counts"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_tweet"
+                    style="@style/user_formation_text"
+                    android:ellipsize="none"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="0dp"
+                    android:text="0"
+                    android:textSize="@dimen/font_24" />
+
+                <TextView
+                    style="@style/user_formation_info"
+                    android:layout_marginBottom="0dp"
+                    android:padding="0dp"
+                    android:text="动弹" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_favorite"
+                style="@style/new_user_information_counts"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_favorite"
+                    style="@style/user_formation_text"
+                    android:ellipsize="none"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="0dp"
+                    android:text="0"
+                    android:textSize="@dimen/font_24" />
+
+                <TextView
+                    style="@style/user_formation_info"
+                    android:layout_marginBottom="0dp"
+                    android:padding="0dp"
+                    android:text="收藏" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_following"
+                style="@style/new_user_information_counts"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_following"
+                    style="@style/user_formation_text"
+                    android:ellipsize="none"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="0dp"
+                    android:text="0"
+                    android:textSize="@dimen/font_24" />
+
+                <TextView
+                    style="@style/user_formation_info"
+                    android:layout_marginBottom="0dp"
+                    android:padding="0dp"
+                    android:text="关注" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_follower"
+                style="@style/new_user_information_counts"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/lay_12"
+                android:paddingRight="@dimen/lay_12">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_follower"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:ellipsize="none"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:padding="0dp"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_24" />
+
+                    <TextView
+                        android:id="@+id/user_info_notice_fans"
+                        android:layout_width="wrap_content"
+                        android:layout_height="14dp"
+                        android:layout_gravity="right|top"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/ic_red_dot"
+                        android:ellipsize="none"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:minWidth="14dp"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_10"
+                        android:visibility="gone"
+                        tools:text="1"
+                        tools:visibility="visible" />
+                </FrameLayout>
+
+                <TextView
+                    style="@style/user_formation_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="0dp"
+                    android:padding="0dp"
+                    android:text="粉丝"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_12" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/rl_message"
+                    style="@style/option_item_rl">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/ic_my_message" />
+
+                    <TextView
+                        style="@style/option_item_text"
+                        android:text="我的消息" />
+
+                    <TextView
+                        android:id="@+id/user_info_notice_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="14dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/ic_red_dot"
+                        android:ellipsize="none"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:minWidth="14dp"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_10"
+                        android:visibility="gone"
+                        tools:text="1"
+                        tools:visibility="visible" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="10dp"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/ic_arrow_right" />
+                </LinearLayout>
+
+                <View
+                    style="@style/h_line"
+                    android:layout_height="1px"
+                    android:layout_marginStart="52dp"
+                    android:background="@color/list_divider_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/rl_blog"
+                    style="@style/option_item_rl">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/ic_my_blog" />
+
+                    <TextView
+                        style="@style/option_item_text"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="我的博客" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/ic_arrow_right" />
+                </LinearLayout>
+
+                <View
+                    style="@style/h_line"
+                    android:layout_height="1px"
+                    android:layout_marginStart="52dp"
+                    android:background="@color/list_divider_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/rl_info_question"
+                    style="@style/option_item_rl">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/ic_my_question" />
+
+                    <TextView
+                        style="@style/option_item_text"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="我的问答" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/ic_arrow_right" />
+                </LinearLayout>
+
+                <View
+                    style="@style/h_line"
+                    android:layout_height="1px"
+                    android:layout_marginStart="52dp"
+                    android:background="@color/list_divider_color" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/rl_info_activities"
+                    style="@style/option_item_rl">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/ic_my_event" />
+
+                    <TextView
+                        style="@style/option_item_text"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="我的活动" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/ic_arrow_right" />
+                </LinearLayout>
+
+                <View
+                    style="@style/h_line"
+                    android:layout_height="1px"
+                    android:layout_marginStart="52dp"
+                    android:background="@color/list_divider_color" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/rl_team"
+                    style="@style/option_item_rl">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/ic_my_team" />
+
+                    <TextView
+                        style="@style/option_item_text"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="我的团队" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/ic_arrow_right" />
+                </LinearLayout>
+
+                <View
+                    style="@style/h_line"
+                    android:layout_height="1px"
+                    android:background="@color/list_divider_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/rl_team1"
+                    style="@style/option_item_rl">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/ic_my_team" />
+
+                    <TextView
+                        style="@style/option_item_text"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="我的团队" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/ic_arrow_right" />
+                </LinearLayout>
+
+                <View
+                    style="@style/h_line"
+                    android:layout_height="1px"
+                    android:background="@color/list_divider_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/rl_team2"
+                    style="@style/option_item_rl">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/ic_my_team" />
+
+                    <TextView
+                        style="@style/option_item_text"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="我的团队" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/ic_arrow_right" />
+                </LinearLayout>
+
+                <View
+                    style="@style/h_line"
+                    android:layout_height="1px"
+                    android:background="@color/list_divider_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/rl_team3"
+                    style="@style/option_item_rl">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/ic_my_team" />
+
+                    <TextView
+                        style="@style/option_item_text"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="我的团队" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/ic_arrow_right" />
+                </LinearLayout>
+
+                <View
+                    style="@style/h_line"
+                    android:layout_height="1px"
+                    android:background="@color/list_divider_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/rl_team4"
+                    style="@style/option_item_rl">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/ic_my_team" />
+
+                    <TextView
+                        style="@style/option_item_text"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="我的团队" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/ic_arrow_right" />
+                </LinearLayout>
+
+                <View
+                    style="@style/h_line"
+                    android:layout_height="1px"
+                    android:background="@color/list_divider_color" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
