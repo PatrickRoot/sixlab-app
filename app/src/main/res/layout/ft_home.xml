@@ -1,8 +1,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="cn.sixlab.app.sixlabapp.ft.NotificationsFragment"
     android:fitsSystemWindows="false"
     android:orientation="vertical"
     android:background="#24cf5f"
@@ -52,7 +50,7 @@
                 android:maxLines="1"
                 android:textColor="@color/white"
                 android:textSize="20sp"
-                tools:text="Patrick" />
+                android:text="Patrick" />
         </RelativeLayout>
 
         <ImageView
@@ -196,8 +194,7 @@
                         android:textColor="@color/white"
                         android:textSize="@dimen/font_10"
                         android:visibility="gone"
-                        tools:text="1"
-                        tools:visibility="visible" />
+                        android:text="1"/>
                 </FrameLayout>
 
                 <TextView
@@ -256,8 +253,7 @@
                         android:textColor="@color/white"
                         android:textSize="@dimen/font_10"
                         android:visibility="gone"
-                        tools:text="1"
-                        tools:visibility="visible" />
+                        android:text="1"/>
 
                     <View
                         android:layout_width="0dp"
