@@ -1,99 +1,113 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
     <!--4-->
-    <style name="t06" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="t06" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/blue_btn_bg_color</item>
+        <item name="android:statusBarColor">@color/blue_btn_bg_color</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
     <!--7-->
-    <style name="t07" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="t07" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/blue_btn_bg_pressed_color</item>
+        <item name="android:statusBarColor">@color/blue_btn_bg_pressed_color</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
     <!--10-->
-    <style name="t08" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="t08" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/red_btn_bg_color</item>
+        <item name="android:statusBarColor">@color/red_btn_bg_color</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
     <!--12-->
-    <style name="t09" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="t09" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/red_btn_bg_pressed_color</item>
+        <item name="android:statusBarColor">@color/red_btn_bg_pressed_color</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
     <!--9-->
-    <style name="t10" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="t10" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/error_stroke_color</item>
+        <item name="android:statusBarColor">@color/error_stroke_color</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
     <!--8-->
-    <style name="t11" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="t11" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/success_stroke_color</item>
+        <item name="android:statusBarColor">@color/success_stroke_color</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-    <!--<style name="t12" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <!--<style name="t12" parent="Theme.AppCompat.Light.NoActionBar">-->
         <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
         <!--<item name="colorPrimary">@color/trans_success_stroke_color</item>-->
         <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
         <!--<item name="colorAccent">@color/colorAccent</item>-->
     <!--</style>-->
-    <style name="t13" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="t13" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/warning_stroke_color</item>
+        <item name="android:statusBarColor">@color/warning_stroke_color</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-    <style name="t14" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="t14" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/text_color</item>
+        <item name="android:statusBarColor">@color/text_color</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-    <style name="t15" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="t15" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/material_blue_grey_80</item>
+        <item name="android:statusBarColor">@color/material_blue_grey_80</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-    <style name="t16" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="t16" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/material_blue_grey_90</item>
+        <item name="android:statusBarColor">@color/material_blue_grey_90</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-    <style name="t17" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="t17" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/material_blue_grey_95</item>
+        <item name="android:statusBarColor">@color/material_blue_grey_95</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-    <style name="t18" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="t18" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/material_deep_teal_20</item>
+        <item name="android:statusBarColor">@color/material_deep_teal_20</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-    <style name="t19" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="t19" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/material_deep_teal_50</item>
+        <item name="android:statusBarColor">@color/material_deep_teal_50</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
