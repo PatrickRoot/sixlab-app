@@ -22,4 +22,6 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+
+    <string name="show_name">电视剧记录仪</string>
 </resources>

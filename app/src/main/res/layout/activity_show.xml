@@ -10,7 +10,7 @@
     tools:context="cn.sixlab.app.sixlabapp.MainActivity">
 
     <TextView
-        android:text="@string/app_name"
+        android:text="@string/show_name"
         android:layout_width="match_parent"
         android:textSize="@dimen/font_24"
         android:textAlignment="textStart"
@@ -27,13 +27,5 @@
         android:layout_weight="1"
         android:layout_gravity="end" >
     </ScrollView>
-
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:background="?android:attr/windowBackground"
-        app:menu="@menu/navigation"/>
 
 </LinearLayout>

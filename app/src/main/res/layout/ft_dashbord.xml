@@ -1,99 +1,212 @@
-<com.daimajia.swipe.SwipeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/sample1"
-    android:layout_width="match_parent"
-    android:layout_height="80dp">
-    <!-- Bottom View Start-->
-    <LinearLayout
-        android:background="#66ddff00"
-        android:id="@+id/bottom_wrapper1"
-        android:layout_width="160dp"
-        android:weightSum="1"
-        android:orientation="horizontal"
-        android:layout_height="match_parent">
-        <!--What you want to show-->
-        <ImageView
-            android:id="@+id/magnifier1"
-            android:src="@drawable/ic_home_black_24dp"
-            android:layout_width="70dp"
-            android:background="#f7e79c"
-            android:paddingLeft="25dp"
-            android:paddingRight="25dp"
-            android:layout_height="match_parent" />
-        <ImageView
-            android:id="@+id/magnifier2"
-            android:src="@drawable/ic_launcher"
-            android:layout_width="70dp"
-            android:background="#f7e79c"
-            android:paddingLeft="25dp"
-            android:paddingRight="25dp"
-            android:layout_height="match_parent" />
-    </LinearLayout>
-    <LinearLayout
-        android:background="#66ddff00"
-        android:id="@+id/bottom_wrapper2"
-        android:layout_width="160dp"
-        android:weightSum="1"
-        android:orientation="horizontal"
-        android:layout_height="match_parent">
-        <!--What you want to show-->
-        <ImageView
-            android:id="@+id/magnifier3"
-            android:src="@drawable/ic_notifications_black_24dp"
-            android:layout_width="70dp"
-            android:background="#f7e79c"
-            android:paddingLeft="25dp"
-            android:paddingRight="25dp"
-            android:layout_height="match_parent" />
-        <ImageView
-            android:id="@+id/magnifier4"
-            android:src="@drawable/ic_launcher"
-            android:layout_width="70dp"
-            android:background="#f7e79c"
-            android:paddingLeft="25dp"
-            android:paddingRight="25dp"
-            android:layout_height="match_parent" />
-    </LinearLayout>
-    <!-- Bottom View End-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:weightSum="2">
 
-    <!-- Surface View Start -->
-    <LinearLayout
-        android:padding="10dp"
-        android:background="#ffffff"
+    <Button
+        android:id="@+id/dash_show"
+        android:text="电视剧"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <com.daimajia.swipe.SwipeLayout
+        android:id="@+id/tool1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <!--What you want to show in SurfaceView-->
-        <TextView
-            android:id="@+id/archive1"
-            android:textColor="#fff"
-            android:text="Archive"
-            android:layout_weight="0.5"
-            android:gravity="center"
-            android:clickable="true"
-            android:background="@color/success_stroke_color"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
-        <TextView
-            android:id="@+id/archive2"
-            android:textColor="#fff"
-            android:text="Archive"
-            android:layout_weight="0.5"
-            android:gravity="center"
-            android:clickable="true"
-            android:background="@color/text_color"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
-        <TextView
-            android:id="@+id/archive3"
-            android:textColor="#fff"
-            android:text="Archive"
-            android:layout_weight="0.5"
-            android:gravity="center"
-            android:clickable="true"
-            android:background="@color/colorAccent"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
+        android:layout_height="80dp">
+        <!-- Bottom View Start-->
+        <LinearLayout
+            android:background="#66ddff00"
+            android:id="@+id/tool1_wrapper_left"
+            android:layout_width="160dp"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <!--What you want to show-->
+            <ImageView
+                android:id="@+id/tool1_a1"
+                android:src="@drawable/ic_home_black_24dp"
+                android:layout_width="70dp"
+                android:background="#f7e79c"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/tool1_a2"
+                android:src="@drawable/ic_launcher"
+                android:layout_width="70dp"
+                android:background="#f7e79c"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="#66ddff00"
+            android:id="@+id/tool1_wrapper_right"
+            android:layout_width="160dp"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <!--What you want to show-->
+            <ImageView
+                android:id="@+id/tool1_a3"
+                android:src="@drawable/ic_notifications_black_24dp"
+                android:layout_width="70dp"
+                android:background="#f7e79c"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/tool1_a4"
+                android:src="@drawable/ic_launcher"
+                android:layout_width="70dp"
+                android:background="#f7e79c"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <!-- Bottom View End-->
 
-    </LinearLayout>
-    <!-- Surface View End -->
-</com.daimajia.swipe.SwipeLayout>
+        <!-- Surface View Start -->
+        <LinearLayout
+            android:padding="10dp"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--What you want to show in SurfaceView-->
+            <TextView
+                android:id="@+id/tool1_t1"
+                android:textColor="#fff"
+                android:text="tool1_t1"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:clickable="true"
+                android:background="@color/success_stroke_color"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tool1_t2"
+                android:textColor="#fff"
+                android:text="tool1_t2"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:clickable="true"
+                android:background="@color/text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tool1_t3"
+                android:textColor="#fff"
+                android:text="tool1_t3"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:clickable="true"
+                android:background="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+        <!-- Surface View End -->
+    </com.daimajia.swipe.SwipeLayout>
+
+    <com.daimajia.swipe.SwipeLayout
+        android:id="@+id/tool2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <!-- Bottom View Start-->
+        <LinearLayout
+            android:background="#66ddff00"
+            android:id="@+id/tool2_wrapper_left"
+            android:layout_width="160dp"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <!--What you want to show-->
+            <ImageView
+                android:id="@+id/tool2_a1"
+                android:src="@drawable/ic_dashboard_black_24dp"
+                android:layout_width="70dp"
+                android:background="#f7e79c"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/tool2_a2"
+                android:src="@drawable/ic_launcher"
+                android:layout_width="70dp"
+                android:background="#f7e79c"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="#66ddff00"
+            android:id="@+id/tool2_wrapper_right"
+            android:layout_width="160dp"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <!--What you want to show-->
+            <ImageView
+                android:id="@+id/tool2_a3"
+                android:src="@drawable/ic_launcher"
+                android:layout_width="70dp"
+                android:background="#f7e79c"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/tool2_a4"
+                android:src="@drawable/ic_home_black_24dp"
+                android:layout_width="70dp"
+                android:background="#f7e79c"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <!-- Bottom View End-->
+
+        <!-- Surface View Start -->
+        <LinearLayout
+            android:padding="10dp"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--What you want to show in SurfaceView-->
+            <TextView
+                android:id="@+id/tool2_t1"
+                android:textColor="#fff"
+                android:text="tool2_t1"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:clickable="true"
+                android:background="@color/success_stroke_color"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tool2_t2"
+                android:textColor="#fff"
+                android:text="tool2_t2"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:clickable="true"
+                android:background="@color/text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tool2_t3"
+                android:textColor="#fff"
+                android:text="tool2_t3"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:clickable="true"
+                android:background="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+        <!-- Surface View End -->
+    </com.daimajia.swipe.SwipeLayout>
+</LinearLayout>

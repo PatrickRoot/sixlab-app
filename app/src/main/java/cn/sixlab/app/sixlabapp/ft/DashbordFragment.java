@@ -2,11 +2,13 @@ package cn.sixlab.app.sixlabapp.ft;
 
 import android.app.Fragment;
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import com.daimajia.swipe.SwipeLayout;
@@ -14,6 +16,7 @@ import com.daimajia.swipe.SwipeLayout;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.sixlab.app.sixlabapp.R;
+import cn.sixlab.app.sixlabapp.tools.ShowActivity;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -33,10 +36,13 @@ public class DashbordFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    @BindView(R.id.sample1)
+    @BindView(R.id.dash_show)
+    Button button;
+
+    @BindView(R.id.tool1)
     SwipeLayout swipeLayout;
 
-    @BindView(R.id.magnifier1)
+    @BindView(R.id.tool1_a1)
     ImageView imageView;
 
     private OnFragmentInteractionListener mListener;
@@ -80,9 +86,17 @@ public class DashbordFragment extends Fragment {
         View view = inflater.inflate(R.layout.ft_dashbord, container, false);
         ButterKnife.bind(this,view);
         swipeLayout.setShowMode(SwipeLayout.ShowMode.LayDown);
-        swipeLayout.addDrag(SwipeLayout.DragEdge.Left, getActivity().findViewById(R.id.bottom_wrapper1));
-        swipeLayout.addDrag(SwipeLayout.DragEdge.Right, getActivity().findViewById(R.id.bottom_wrapper2));
+        swipeLayout.addDrag(SwipeLayout.DragEdge.Left, getActivity().findViewById(R.id.tool1_wrapper_right));
+        swipeLayout.addDrag(SwipeLayout.DragEdge.Right, getActivity().findViewById(R.id.tool1_wrapper_left));
 
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(getActivity(), ShowActivity.class);
+                getActivity().startActivity(intent);
+            }
+        });
 
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
