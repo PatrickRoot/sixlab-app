@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">Sixlab 工具</string>
-    <string name="title_notifications">最近</string>
+    <string name="title_lately">最近</string>
     <string name="title_dashboard">应用</string>
     <string name="title_home">我的</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_notifications_fragment">Hello notifications fragment</string>
+    <string name="hello_lately_fragment">Hello lately fragment</string>
     <string name="hello_dashbord_fragment">Hello dashbord fragment</string>
     <string name="hello_home_fragment">Hello home fragment</string>
     <string name="title_activity_login">登录</string>

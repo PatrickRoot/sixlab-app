@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="cn.sixlab.app.sixlabapp.ft.NotificationsFragment"
+    tools:context="cn.sixlab.app.sixlabapp.ft.LatelyFragment"
     android:orientation="vertical"
     android:weightSum="2">
 

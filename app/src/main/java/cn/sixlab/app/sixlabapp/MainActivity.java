@@ -9,13 +9,13 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
-import android.widget.ScrollView;
+import android.widget.FrameLayout;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.sixlab.app.sixlabapp.ft.DashbordFragment;
+import cn.sixlab.app.sixlabapp.ft.LatelyFragment;
 import cn.sixlab.app.sixlabapp.ft.HomeFragment;
-import cn.sixlab.app.sixlabapp.ft.NotificationsFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     BottomNavigationView navigation;
 
     @BindView(R.id.mainContent)
-    ScrollView mainContent;
+    FrameLayout mainContent;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -56,9 +56,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.navigation_home:
                 clz = HomeFragment.class;
                 break;
-            case R.id.navigation_notifications:
+            case R.id.navigation_lately:
             default:
-                clz = NotificationsFragment.class;
+                clz = LatelyFragment.class;
         }
 
         if(preFt !=null){

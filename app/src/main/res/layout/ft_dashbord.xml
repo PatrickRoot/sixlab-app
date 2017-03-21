@@ -52,7 +52,7 @@
             <!--What you want to show-->
             <ImageView
                 android:id="@+id/tool1_a3"
-                android:src="@drawable/ic_notifications_black_24dp"
+                android:src="@drawable/ic_lately_black_24dp"
                 android:layout_width="70dp"
                 android:background="#f7e79c"
                 android:paddingLeft="25dp"
