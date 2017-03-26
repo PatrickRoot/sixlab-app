@@ -9,12 +9,244 @@
     android:orientation="vertical"
     tools:context="cn.sixlab.app.sixlabapp.tools.ShowActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/rl_message"
+            style="@style/option_item_rl">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:contentDescription="@null"
+                android:src="@mipmap/btn_play"/>
+
+            <EditText
+                android:drawablePadding="8.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="4.0dip"
+                android:gravity="center_vertical"
+                android:textColor="#333"
+                android:clickable="false"
+                android:layout_centerVertical="true"
+                android:textSize="16.0dip"
+                android:hint="请输入关键字"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:contentDescription="@null"
+                android:src="@mipmap/btn_search"/>
+        </LinearLayout>
+
+        <View
+            style="@style/h_line"
+            android:layout_height="1px"
+            android:layout_marginStart="52dp"
+            android:background="@color/list_divider_color"/>
+    </LinearLayout>
+
     <ScrollView
         android:id="@+id/mainContent"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:layout_gravity="end" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/rl_blog"
+                    style="@style/option_item_rl">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/ic_my_blog" />
+
+                    <TextView
+                        style="@style/option_item_text"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="我的博客" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/ic_arrow_right" />
+                </LinearLayout>
+
+                <View
+                    style="@style/h_line"
+                    android:layout_height="1px"
+                    android:layout_marginStart="52dp"
+                    android:background="@color/list_divider_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/rl_info_question"
+                    style="@style/option_item_rl">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/ic_my_question" />
+
+                    <TextView
+                        style="@style/option_item_text"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="我的问答" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/ic_arrow_right" />
+                </LinearLayout>
+
+                <View
+                    style="@style/h_line"
+                    android:layout_height="1px"
+                    android:layout_marginStart="52dp"
+                    android:background="@color/list_divider_color" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/rl_info_activities"
+                    style="@style/option_item_rl">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/ic_my_event" />
+
+                    <TextView
+                        style="@style/option_item_text"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="我的活动" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/ic_arrow_right" />
+                </LinearLayout>
+
+                <View
+                    style="@style/h_line"
+                    android:layout_height="1px"
+                    android:layout_marginStart="52dp"
+                    android:background="@color/list_divider_color" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/rl_team"
+                    style="@style/option_item_rl">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/ic_my_team" />
+
+                    <TextView
+                        style="@style/option_item_text"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="我的团队" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/ic_arrow_right" />
+                </LinearLayout>
+
+                <View
+                    style="@style/h_line"
+                    android:layout_height="1px"
+                    android:background="@color/list_divider_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/rl_team1"
+                    style="@style/option_item_rl">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/btn_plus" />
+
+                    <TextView
+                        style="@style/option_item_text"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/add_new_show" />
+                </LinearLayout>
+
+                <View
+                    style="@style/h_line"
+                    android:layout_height="1px"
+                    android:background="@color/list_divider_color" />
+            </LinearLayout>
+
+        </LinearLayout>
+
     </ScrollView>
 
 </LinearLayout>

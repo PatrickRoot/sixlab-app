@@ -28,11 +28,6 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
         <activity android:name=".exp.ExpActivity"/>
         <activity
@@ -44,6 +39,11 @@
                 android:value="cn.sixlab.app.sixlabapp.MainActivity"/>
         </activity>
         <activity android:name=".tools.ShowActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
     </application>
 
