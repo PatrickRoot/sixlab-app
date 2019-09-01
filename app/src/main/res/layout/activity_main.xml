@@ -10,7 +10,7 @@
     tools:context="cn.sixlab.app.sixlabapp.MainActivity">
 
     <FrameLayout
-        android:id="@+id/mainContent"
+        android:id="@+id/ftContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"

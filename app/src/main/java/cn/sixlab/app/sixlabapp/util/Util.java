@@ -2,6 +2,10 @@ package cn.sixlab.app.sixlabapp.util;
 
 import java.text.SimpleDateFormat;
 
+import cn.sixlab.app.sixlabapp.http.TokenInterceptor;
+import okhttp3.Interceptor;
+import okhttp3.OkHttpClient;
+
 /**
  * Created by loki on 2016/4/4.
  */
@@ -10,8 +14,8 @@ public class Util {
     public static SimpleDateFormat timeFormat = new SimpleDateFormat("HH:mm:ss");
     public static SimpleDateFormat dateTimeFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
-//        public static String sixlab = "http://192.168.100.56:9230/";
-    public static String sixlab = "https://sixlab.cn/";
+    // public static String sixlab = "http://192.168.200.132:8888/";
+    public static String sixlab = "https://api.sixlab.cn/";
     public static String douban = "https://api.douban.com/";
 
     public static String formatDate(String dateStr){
@@ -23,4 +27,13 @@ public class Util {
             return "";
         }
     }
+
+    public static OkHttpClient apiToken(){
+        Interceptor interceptor = new TokenInterceptor();
+        OkHttpClient client = new OkHttpClient.Builder()
+                .addInterceptor(interceptor)
+                .build();
+        return client;
+    }
+
 }

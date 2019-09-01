@@ -35,7 +35,7 @@
                 android:layout_height="match_parent" />
             <ImageView
                 android:id="@+id/tool1_a2"
-                android:src="@drawable/ic_launcher"
+                android:src="@drawable/ic_material"
                 android:layout_width="70dp"
                 android:background="#f7e79c"
                 android:paddingLeft="25dp"
@@ -60,7 +60,7 @@
                 android:layout_height="match_parent" />
             <ImageView
                 android:id="@+id/tool1_a4"
-                android:src="@drawable/ic_launcher"
+                android:src="@drawable/ic_red_dot"
                 android:layout_width="70dp"
                 android:background="#f7e79c"
                 android:paddingLeft="25dp"
@@ -134,7 +134,7 @@
                 android:layout_height="match_parent" />
             <ImageView
                 android:id="@+id/tool2_a2"
-                android:src="@drawable/ic_launcher"
+                android:src="@drawable/ic_red_dot"
                 android:layout_width="70dp"
                 android:background="#f7e79c"
                 android:paddingLeft="25dp"
@@ -151,7 +151,7 @@
             <!--What you want to show-->
             <ImageView
                 android:id="@+id/tool2_a3"
-                android:src="@drawable/ic_launcher"
+                android:src="@drawable/ic_title_bar_icon_bg"
                 android:layout_width="70dp"
                 android:background="#f7e79c"
                 android:paddingLeft="25dp"

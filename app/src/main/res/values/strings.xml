@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Sixlab 工具</string>
+    <string name="app_name">六楼·电视剧</string>
     <string name="title_lately">最近</string>
     <string name="title_dashboard">应用</string>
     <string name="title_home">我的</string>
@@ -23,6 +23,12 @@
         completions."
     </string>
 
-    <string name="show_name">电视剧记录仪</string>
     <string name="add_new_show">添加新的电视剧</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_search">所有</string>
+    <string name="title_watching">正看</string>
+    <string name="title_watched">看过</string>
+    <string name="title_notifications">Notifications</string>
 </resources>
